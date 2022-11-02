@@ -17,11 +17,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Enter Folder
-      run: cd php/
-
     - name: Validate composer.json and composer.lock
-      run: composer validate --strict
+      run: cd php/ composer validate --strict
 
     - name: Cache Composer packages
       id: composer-cache
