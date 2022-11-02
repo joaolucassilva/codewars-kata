@@ -17,6 +17,9 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - name: Enter Folder
+      run: cd php/
+
     - name: Validate composer.json and composer.lock
       run: composer validate --strict
 
@@ -28,9 +31,6 @@ jobs:
         key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
         restore-keys: |
           ${{ runner.os }}-php-
-
-    - name: Enter Folder
-      run: cd php/ 
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
