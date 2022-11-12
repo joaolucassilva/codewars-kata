@@ -6,9 +6,7 @@
     },
     "timeout": 10,
     "logs": {
-        "stryker": {
-            "badge": "/^release-.*$/"
-        }
+        "html": "infection/infection.html",
     },
     "mutators": {
         "global-ignoreSourceCodeByRegex": [
