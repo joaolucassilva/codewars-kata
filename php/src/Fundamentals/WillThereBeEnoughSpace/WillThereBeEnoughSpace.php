@@ -9,6 +9,6 @@ class WillThereBeEnoughSpace
     public function solution(int $capacity, int $embarkedPassengers, int $passengersWaiting): int
     {
         $wait = ($capacity - $embarkedPassengers) - $passengersWaiting;
-        return $wait >= 0 ? 0 : $wait * -1 ;
+        return $wait >= 0 ? 0 : $wait * -1;
     }
 }

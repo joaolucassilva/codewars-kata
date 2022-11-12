@@ -37,3 +37,7 @@ jobs:
     - name: Run test suite
       working-directory: ./php
       run: composer run-script test
+
+    - name: Run test suite
+      working-directory: ./php
+      run: composer run-script infection

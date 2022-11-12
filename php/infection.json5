@@ -1,0 +1,20 @@
+{
+    "source": {
+        "directories": [
+            "src"
+        ],
+    },
+    "timeout": 10,
+    "logs": {
+        "html": "infection/infection.html",
+        "stryker": {
+            "report": "main"
+        }
+    },
+    "mutators": {
+        "global-ignoreSourceCodeByRegex": [
+            "Assert::.*"
+        ],
+        "@default": true
+    },
+}
